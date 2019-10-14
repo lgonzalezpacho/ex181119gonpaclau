@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,89 @@
     <title>Ejercicio 1-UT2-Sesion 10</title>
     <style>
         /*Hoja de estilos interna*/
-        .clasecolor{
+        .clasecolor {
             color: blueviolet;
+        }
+
+        p {
+            /*Selector de elemento*/
+            text-align: center;
+            color: cyan;
+        }
+
+        #particularcolor1 {
+            /*Selector de id. Estilo particular*/
+            color: darkgoldenrod;
+        }
+
+        .clasealineacion1 {
+            /*Selector de clase*/
+            text-align: right;
+        }
+
+        .variasclases1 {
+            /**/
+            color: darkgreen;
+        }
+
+        .variasclases2 {
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        p {
+            color: darkolivegreen;
+        }
+
+        #colorfondo1 {
+            background-color: rgb(5, 14, 99);
+            color: whitesmoke;
+
+        }
+
+        .imagenfondo1 {
+            background-image: url("./img/wg.jpg");
         }
     </style>
     <link rel="stylesheet" type="text/css" href="css/Hojaestilos1.css">
 </head>
+
 <body>
     <h1>Sesion 10- UT2</h1>
     <h2>Trabajo con hojas de estilo internas</h2>
-    <p class="clasecolor">Este parrafo utiliza la clase 
-        "clasecolor" que esta implementada en una hoja de estilos interna</p>
+    <p class="clasecolor">Este parrafo utiliza la clase "clasecolor" que esta implementada en una hoja de estilos
+        interna</p>
     <h2>Trabajo con hojas de estilo externas</h2>
-    <p>El span que esta dentro de este parrafo, utilizará una 
-        <span class="colorhojaexterna">clase implementada en una hoja de estilos externa.</span>
+    <p>El span que esta dentro de este parrafo, utilizará una <span class="colorhojaexterna">clase implementada en una
+            hoja de estilos externa.</span>
     </p>
     <h2>Trabajo con estilos aplicados en línea</h2>
-    <p style="color: crimson;">Este parrafo tendra dentro un span que utilizará un estilo en línea.</p>
-    <h2>Vamos a probar las prioridades a la hora de aplicar estilos: en línes(directo), 
-        de forma interna o de forma externa</h2>
-    <p style="color: red;"clase="clasecolor">Este parrafo va a tener 
-    propiedades que se dobreescriben</p>
-    <p class="colorhojaexterna clasecolor">Pruebo el orden de prioridades entre una hoja de 
+    <p style="color: crimson;">Este parrafo utilizará un estilo en línea.</p>
+    <h2>Vamos a probar las prioridades a la hora de aplicar estilos: en línes(directo), de forma interna o de forma
+        externa</h2>
+    <p style="color: red;" class="clasecolor">Este parrafo va a tener propiedades que se dobreescriben</p>
+    <p class="colorhojaexterna clasecolor">Pruebo el orden de prioridades entre una hoja de
         estilos interna y una hoja de estilos externa. En este caso la hoja de estilos interna
         esta declarada antes en el codigo que la hoja de estilos externa, por eso muesta la
         externa porque se interpreta en cascasa(es decir, línea a línea)</p>
+    <h2>Selectores</h2>
+    <p>Los elementos que tengan una clase específica van a tener las propiedades de esa clase específica con propiedad
+        sobre los selectores del elemento</p>
+    <p id="particularcolor1">Este parrafo va a cumplir un estilo particular (selector de id).
+        Tiene prioridad sobre el selector del elemento si hay propiedades que se sobreescriban.</p>
+    <p class="clasealineacion1">Este parrafo cumple una clase "clasealineacion1".
+        Si cumpliera un selector de nombre, las propiedades comunes con la clase "clasealineacion1"
+        tendrian propiedad en el selector de clase.</p>
+    <h2>Aplicar varias clases a un elemento</h2>
+    <div class="variasclases1 variasclases2">Capa que cumple varias clases</div>
+    <h2>Colores de fuente y colores de fondo</h2>
+    <div id="colorfondo1">ESta capa tendrá texto de color blanco y fondo oscuro</div>
+    <h3 style="color::#6a5acd ;">H3 con color establecido mediante color hexadecimal</h3>
+    <div class="imagenfondo1">
+        Capa con imagen de fondo.Como la capa no tiene dimensiones solo se va aver una paorcion de la imagen,
+        concretamente la adaptada al tamaño que tiene la capa, si no hubiera escrito texto, esta imagen no se vería
+    </div>
 </body>
+
 </html>
