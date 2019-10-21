@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Hojaestilos2.css">
+    <title>Ejercicio 2- Sesion 12</title>
+</head>
+<body>
+    <h1>Ejercicio 2 - Sesion 12</h1>
+    <h2>Trabajo con margenes</h2>
+    <div class="capa margenizquierdo margensuperior margenderecho">
+        Capa con margen izquierdo y superior. Añado margen derecho que se 
+        suma con el margen izquierdo de la capa siguiente
+    </div>
+    <div class="capa margenizquierdo margensuperior">
+        Capa con margen izquierdo y superior
+    </div>
+
+    <div class="capacontenedora">
+        <div class="capacentradaflotante">
+            Capa flotante dentro de un contenedor para aislar estas capas
+            del resto de elementos
+        </div>
+        <div class="capacentradaflotante">
+            display:flow-root sirve para controlar los flotantes
+        </div>
+    </div>
+    <div class="capacontenedora">
+        <div class="capaflotarderecha">
+            Esta capa esta flotando en el lado derecho
+        </div>
+    </div>
+</body>
+</html>
