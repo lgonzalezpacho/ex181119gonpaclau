@@ -3,3 +3,33 @@
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.estilofuentenormal{
+    font-style: normal;
+}
+.estilofuenteitalic{
+    font-style: italic;
+}
+.estilofuenteoblique{
+    font-style: oblique;
+}
+.tamanofuente1{
+    font-size: 25px;/*Medida absoluta*/
+}
+.tamanofuente2{
+    font-size: 1.5em;/*Medida relativa*/
+}
+.anchofuente1{
+    font-weight: bold;
+}
+.anchofuente2{
+    font-weight: bolder;
+}
+.anchofuente3{
+    font-weight: normal;
+}
+.fontvariant1{
+    font-variant: small-caps;
+}
+.fontvariant2{
+font-variant: normal;
+}

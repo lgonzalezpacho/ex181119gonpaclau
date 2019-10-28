@@ -1,0 +1,27 @@
+/*Mediante pseudoclases soy capaz de controlar el estado de los enlaces*/
+a:link{
+    color: green;
+    text-decoration: none;/*Para que los enlaces no aparezcan subrayados*/
+}
+a:visited{
+    color: purple;
+}
+a:active{
+    color: aquamarine;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;/*Si quiero que los enlaces esten subrayados sitúo el raton encima*/
+}
+ol{
+    background-color: #ff9999;
+    padding: 20px;
+}
+ol li{
+    background-color: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+ul{
+    list-style-image: url(../recursos/icono.png);
+}
