@@ -1,8 +1,42 @@
-p {
+p.ocultar{
     display: none; 
     background-color: yellow; 
     padding: 20px; 
 } 
-div:hover p {
+div:hover p.ocultar{
     display: block; 
+}
+/*Pseudoclase :first-child*/
+div p:first-child{
+    color: brown;
+}
+
+/*Pseudoelemento ::first-line*/
+/*Selecciona la primera línea*/
+p.primeralinea::first-line{
+    font-size: 2em;/*Medida relativa*/
+}
+p.sangriaprimeralinea::first-line{
+    text-indent: 2em;
+}
+/*Pseudoelemento ::first-letter*/
+/*Primera linea*/
+p.primeraletra::first-letter{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Pseudoelemento before*/
+/*por delante del elemento indicado*/
+h6::before{
+    content: "Elemento - ";
+}
+/*Pseudoelemento after*/
+/*por detras del elemento indicado*/
+h5::after{
+    content: " - Videojuego";
+}
+/*Pseudoelemento selection*/
+::selection{
+    color: red;
+    background-color: turquoise;
 }
